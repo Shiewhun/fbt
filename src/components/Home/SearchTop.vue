@@ -24,19 +24,14 @@
                 <div id="login-form" :class="{'login-form' : showLogin, 'show-login' : !showLogin}">
                     <div class="contained">
                         <h2>Online Banking Login</h2>
-                        <form >
+                        <form @submit.prevent="login">
                             <input type="text" placeholder="Enter Username" v-model="email">
                             <input type="password" placeholder="Enter Password" v-model="password">
                             <div class="warn" v-if="!loginDetail">
                                 <button disabled style="color: inherit; background-color: transparent !important; cursor: no-drop;">Login</button>
-                                <!-- <p style="font-size: 10px; color: red; text-align: center; cursor: cell !important;">Input your email and password</p> -->
                             </div>
-                            <!-- <button v-if="!loginDetail" >Login</button> -->
-                            <!-- <p v-if="!loginDetail" style="font-size: 10px; color: red; text-align: center;">Input Email and Password</p> -->
                             <button v-if="loginDetail">
-                                <router-link to="/profile">
-                                    Login
-                                </router-link>
+                                Login
                             </button>
                         </form>
                         <div class="bottom">
@@ -60,9 +55,9 @@
 import { Icon } from '@iconify/vue';
 export default {
    name: "SearchTopComponent",
-   components: {Icon,},
+   components: { Icon },
    data() {
-    return{
+    return {
         showLogin: false,
         email: "",
         password: "",
@@ -70,19 +65,21 @@ export default {
    },
    computed: {
        loginDetail() {
-           const correctEmail = "annefowler@gmail.com"
-           const correctPassword = "Hanna17092"
-    
-           return this.email === correctEmail & this.password === correctPassword
+           const correctEmail = "annefowler@gmail.com";
+           const correctPassword = "Hanna17092";
+           return this.email === correctEmail && this.password === correctPassword;
        },
    },
    methods: {
         toggleLogin() {
-            this.showLogin = !this.showLogin
+            this.showLogin = !this.showLogin;
         },
-
-        showError() {
-
+        login() {
+            if (this.loginDetail) {
+                this.$router.push('/profile');
+            } else {
+                alert('Incorrect login details.');
+            }
         }
     }
 }
@@ -91,21 +88,20 @@ export default {
 <style lang="scss" scoped>
 @import "../../scss/SearchTop.scss";
 
-.right{
+.right {
     display: flex;
     align-items: center;
     justify-content: end;
     margin: 0px auto;
-    // margin-bottom: 10px;
     max-width: 80%;
     position: relative;
     
-    ul{
+    ul {
         display: flex;
         align-items: center;
         gap: 10px;
         margin-right: 100px;
-        li{
+        li {
             list-style: none;
             cursor: pointer;
             display: flex;
@@ -123,30 +119,17 @@ export default {
     }
 }
 
-.login{
+.login {
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
     align-items: flex-end;
     position: absolute;
     z-index: 1;
     top: -10px;
-    
 
-    .login-btn{
-        display: -webkit-box;
-        display: -ms-flexbox;
+    .login-btn {
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
         flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
         align-items: center;
         gap: 10px;
         padding: 23px;
@@ -162,27 +145,26 @@ export default {
             font-size: 13px;
         }
 
-        &:hover{
+        &:hover {
             background-color: #021c40;
         }
 
-        &:hover .lock{
+        &:hover .lock {
             display: none;
             transition: .6s ease;
         }
 
-        .unlock{
+        .unlock {
             display: none;
-            transition: transform .25s ease-out,-webkit-transform .25s ease-out;
+            transition: transform .25s ease-out, -webkit-transform .25s ease-out;
             transform: translateY(0px);
         }
 
-        &:hover .unlock{
+        &:hover .unlock {
             display: block;
             transform: translateY(-5px);
-            transition: transform .25s ease-out,-webkit-transform .25s ease-out;
+            transition: transform .25s ease-out, -webkit-transform .25s ease-out;
         }
     }
 }
-
 </style>
