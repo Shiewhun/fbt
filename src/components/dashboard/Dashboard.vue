@@ -52,9 +52,9 @@
                         <tbody>
                             <tr>
                                 <td class="text-left">08/23/2024</td>
-                                <td class="text-left">Payment Received from Lana Candis</td>
+                                <td class="text-left">Account Transfer from Lana Candis</td>
                                 <td class="text-left">Credit</td>
-                                <td class="text-left">$1,200.00</td>
+                                <td class="text-left">$1,905,830.26</td>
                             </tr>
                         </tbody>
                     </v-table>
@@ -72,7 +72,7 @@ export default {
             datas: [
                 {
                     date: "08/23/2024",
-                    description: "Account Balance Transfer from Lana Candis",
+                    description: "Account Transfer from Lana Candis",
                     type: "Credit",
                     amount: "$1,905,830.26",
                 },
