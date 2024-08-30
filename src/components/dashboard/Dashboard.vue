@@ -27,8 +27,8 @@
             </v-app-bar>
             <v-main style="padding-top: 40px !important;">
                 <div class="dashboard-top">
-                    <h2>$805,830.26<span>{{ " " }}(PND)</span></h2>
-                    <p>Anne Fowler<span>{{ " " }}Current account</span></p>
+                    <h2>$1,905,830.26<span>{{ " " }}(PND)</span></h2>
+                    <p>William Dean MCcoy Jr<span>{{ " " }}Current account</span></p>
                 </div>
                 <div class="dashboard-table">
                     <v-table
