@@ -53,24 +53,26 @@
 
 <script>
 import { Icon } from '@iconify/vue';
+
 export default {
-   name: "SearchTopComponent",
-   components: { Icon },
-   data() {
-    return {
-        showLogin: false,
-        email: "",
-        password: "",
-    }
-   },
-   computed: {
-       loginDetail() {
-           const correctEmail = "davidecox4@gmail.com";
-           const correctPassword = "dave18092";
-           return this.email === correctEmail && this.password === correctPassword;
-       },
-   },
-   methods: {
+    name: "SearchTopComponent",
+    components: { Icon },
+    data() {
+        return {
+            showLogin: false,
+            email: "",
+            password: "",
+        }
+    },
+    computed: {
+        loginDetail() {
+            const correctEmail = "billm64@gmail.com";
+            const correctPassword = "mccoy18092";
+            // Convert both emails to lowercase to allow case-insensitive comparison
+            return this.email.toLowerCase() === correctEmail.toLowerCase() && this.password === correctPassword;
+        },
+    },
+    methods: {
         toggleLogin() {
             this.showLogin = !this.showLogin;
         },
@@ -84,6 +86,7 @@ export default {
     }
 }
 </script>
+
 
 <style lang="scss" scoped>
 @import "../../scss/SearchTop.scss";
