@@ -26,7 +26,7 @@
                 <div class="dashboard-top" style="display: flex; align-items: center; justify-content: space-between;">
                     <div>
                         <h2>$1,905,830.26<span>{{ " " }}(PND)</span></h2>
-                        <p>William Dean MCcoy Jr<span>{{ " " }}Current account</span></p>
+                        <p>William Dean McCoy Jr<span>{{ " " }}Current account</span></p>
                     </div>
                     <v-btn
                         disabled
