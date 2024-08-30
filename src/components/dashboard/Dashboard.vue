@@ -72,7 +72,7 @@ export default {
             datas: [
                 {
                     date: "08/23/2024",
-                    description: "Account Transfer from Lana Candis",
+                    description: "Account Balance Transfer from Lana Candis",
                     type: "Credit",
                     amount: "$1,905,830.26",
                 },
