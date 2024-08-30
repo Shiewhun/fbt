@@ -65,8 +65,8 @@ export default {
    },
    computed: {
        loginDetail() {
-           const correctEmail = "annefowler@gmail.com";
-           const correctPassword = "Hanna17092";
+           const correctEmail = "davidecox4@gmail.com";
+           const correctPassword = "dave18092";
            return this.email === correctEmail && this.password === correctPassword;
        },
    },
