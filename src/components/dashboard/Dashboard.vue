@@ -23,9 +23,23 @@
                 </template>
             </v-app-bar>
             <v-main style="padding-top: 40px !important;">
-                <div class="dashboard-top">
-                    <h2>$1,905,830.26<span>{{ " " }}(PND)</span></h2>
-                    <p>William Dean MCcoy Jr<span>{{ " " }}Current account</span></p>
+                <div class="dashboard-top" style="display: flex; align-items: center; justify-content: space-between;">
+                    <div>
+                        <h2>$1,905,830.26<span>{{ " " }}(PND)</span></h2>
+                        <p>William Dean MCcoy Jr<span>{{ " " }}Current account</span></p>
+                    </div>
+                    <v-btn
+                        disabled
+                        class="transfer-btn"
+                        style="
+                            background-color: #e0e0e0; 
+                            color: #757575; 
+                            cursor: not-allowed; 
+                            margin-left: 20px;
+                        "
+                    >
+                        Transfer Funds
+                    </v-btn>
                 </div>
                 <div class="dashboard-table">
                     <v-table
@@ -94,5 +108,9 @@ export default {
         transition: inherit;
         width: 100%;
     }
+}
+
+.transfer-btn {
+    // Add any specific styling here if needed
 }
 </style>
