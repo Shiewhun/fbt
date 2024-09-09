@@ -14,6 +14,9 @@
                         <img style="width: 100%;" class="dashlogo" src="../../assets/logo.svg" alt="logo">
                     </a>                
                 </template>
+                <!-- <div class="logo">
+                    <img src="../../assets/logo.svg" alt="logo">
+                </div> -->
                 <template v-slot:append>
                     <button class="button dashbtn" style="margin-top: 0px; color: #021c40;">
                         <a href="/" style="color: #021c40;">
@@ -23,23 +26,9 @@
                 </template>
             </v-app-bar>
             <v-main style="padding-top: 40px !important;">
-                <div class="dashboard-top" style="display: flex; align-items: center; justify-content: space-between;">
-                    <div>
-                        <h2>$1,905,830.26<span>{{ " " }}(PND)</span></h2>
-                        <p>William Dean McCoy Jr<span>{{ " " }}Current account</span></p>
-                    </div>
-                    <v-btn
-                        disabled
-                        class="transfer-btn"
-                        style="
-                            background-color: #e0e0e0; 
-                            color: #757575; 
-                            cursor: not-allowed; 
-                            margin-left: 20px;
-                        "
-                    >
-                        Transfer Funds
-                    </v-btn>
+                <div class="dashboard-top">
+                    <h2>$1,905,830.26<span>{{ " " }}(PND)</span></h2>
+                    <p>William Dean MCcoy Jr<span>{{ " " }}Current account</span></p>
                 </div>
                 <div class="dashboard-table">
                     <v-table
@@ -64,167 +53,14 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td class="text-left">08/23/2024</td>
-                                <td class="text-left">Account Transfer from Lana Candis</td>
-                                <td class="text-left">Credit</td>
-                                <td class="text-left">$1,905,830.26</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">01/14/2024</td>
-                                <td class="text-left">POS DEBIT WALMART 9203846 CA</td>
-                                <td class="text-left">Debit</td>
-                                <td class="text-left">$37.19</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">01/11/2024</td>
-                                <td class="text-left">POS DEBIT TARGET 7461923 FL</td>
-                                <td class="text-left">Debit</td>
-                                <td class="text-left">$15.00</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">01/08/2024</td>
-                                <td class="text-left">ONLINE TRANSFER 9182734 NY</td>
-                                <td class="text-left">Credit</td>
-                                <td class="text-left">$1,500.00</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">01/05/2024</td>
-                                <td class="text-left">POS DEBIT NETFLIX.COM 8623945 CA</td>
-                                <td class="text-left">Debit</td>
-                                <td class="text-left">$15.99</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">01/02/2024</td>
-                                <td class="text-left">POS DEBIT STARBUCKS 5487216 IL</td>
-                                <td class="text-left">Debit</td>
-                                <td class="text-left">$3.25</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">12/30/2023</td>
-                                <td class="text-left">POS DEBIT AMAZON.COM/BILL 800-692-7753</td>
-                                <td class="text-left">Debit</td>
-                                <td class="text-left">$64.33</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">12/27/2023</td>
-                                <td class="text-left">POS DEBIT APPLE.COM/BILL 800-692-7753 CA</td>
-                                <td class="text-left">Debit</td>
-                                <td class="text-left">$12.99</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">12/24/2023</td>
-                                <td class="text-left">ONLINE TRANSFER 0987654321 9207561 TX</td>
-                                <td class="text-left">Credit</td>
-                                <td class="text-left">$500.00</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">12/21/2023</td>
-                                <td class="text-left">POS DEBIT UBER 9207561 1234597 OH</td>
-                                <td class="text-left">Debit</td>
-                                <td class="text-left">$22.50</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">12/18/2023</td>
-                                <td class="text-left">POS DEBIT WALMART 6738957 TN</td>
-                                <td class="text-left">Debit</td>
-                                <td class="text-left">$56.27</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">12/15/2023</td>
-                                <td class="text-left">POS DEBIT TARGET3847531 NY</td>
-                                <td class="text-left">Debit</td>
-                                <td class="text-left">$35.00</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">12/12/2023</td>
-                                <td class="text-left">ONLINE TRANSFER 760219843 CA</td>
-                                <td class="text-left">Credit</td>
-                                <td class="text-left">$750.00</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">12/09/2023</td>
-                                <td class="text-left">POS DEBIT NETFLIX.COM 853028190 CA</td>
-                                <td class="text-left">Debit</td>
-                                <td class="text-left">$15.99</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">12/06/2023</td>
-                                <td class="text-left">POS DEBIT STARBUCKS 390275463 CA</td>
-                                <td class="text-left">Debit</td>
-                                <td class="text-left">$5.25</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">12/03/2023</td>
-                                <td class="text-left">POS DEBIT AMAZON.COM 931847507 TN</td>
-                                <td class="text-left">Debit</td>
-                                <td class="text-left">$82.47</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">11/30/2023</td>
-                                <td class="text-left">POS DEBIT APPLE.COM/BILL 866-712-7753 CA</td>
-                                <td class="text-left">Debit</td>
-                                <td class="text-left">$15.99</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">11/27/2023</td>
-                                <td class="text-left">ONLINE TRANSFER 925463891 SAN DIEGO CS</td>
-                                <td class="text-left">Credit</td>
-                                <td class="text-left">$1,000.00</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">11/24/2023</td>
-                                <td class="text-left">POS DEBIT UBER 482640382 TN</td>
-                                <td class="text-left">Debit</td>
-                                <td class="text-left">$18.00</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">11/21/2023</td>
-                                <td class="text-left">POS DEBIT WALMART 213905613 TX</td>
-                                <td class="text-left">Debit</td>
-                                <td class="text-left">$47.63</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">11/18/2023</td>
-                                <td class="text-left">POS DEBIT TARGET 482649382 TN</td>
-                                <td class="text-left">Debit</td>
-                                <td class="text-left">$25.00</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">11/15/2023</td>
-                                <td class="text-left">ONLINE TRANSFER 0987654321, SAN DIEGO CA</td>
-                                <td class="text-left">Credit</td>
-                                <td class="text-left">$300.00</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">11/12/2023</td>
-                                <td class="text-left">POS DEBIT NETFLIX.COM 760321473 CA</td>
-                                <td class="text-left">Debit</td>
-                                <td class="text-left">$15.99</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">11/09/2023</td>
-                                <td class="text-left">POS DEBIT STARBUCKS 238407765 TX</td>
-                                <td class="text-left">Debit</td>
-                                <td class="text-left">$3.50</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">11/06/2023</td>
-                                <td class="text-left">POS DEBIT AMAZON.COM 759231065 TN</td>
-                                <td class="text-left">Debit</td>
-                                <td class="text-left">$49.99</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">11/03/2023</td>
-                                <td class="text-left">ONLINE TRANSFER 1234567890 CA</td>
-                                <td class="text-left">Credit</td>
-                                <td class="text-left">$500.00</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">11/01/2023</td>
-                                <td class="text-left">POS DEBIT APPLE.COM/BILL 800-692-7753 CA</td>
-                                <td class="text-left">Debit</td>
-                                <td class="text-left">$12.99</td>
+                            <tr
+                                v-for="data in datas"
+                                :key="data.name"
+                            >
+                                <td class="text-left">{{ data.date }}</td>
+                                <td class="text-left">{{ data.description }}</td>
+                                <td class="text-left">{{ data.type }}</td>
+                                <td class="text-left">{{ data.amount }}</td>
                             </tr>
                         </tbody>
                     </v-table>
@@ -233,3 +69,218 @@
         </v-container>
     </div>
 </template>
+
+<script>
+    export default {
+        name: "DashboardComp",
+        data() {
+            return {
+                // datas: [
+                //     {
+                //         date: "01/14/2024",
+                //         description: "POS DEBIT WALMART 9203846 CA",
+                //         type: "Debit",
+                //         amount: "$37.19",
+                //     },
+                //     {
+                //         date: "01/11/2024",
+                //         description: "POS DEBIT TARGET 7461923 FL",
+                //         type: "Debit",
+                //         amount: "$15.00",
+                //     },
+                //     {
+                //         date: "01/08/2024",
+                //         description: " ONLINE TRANSFER 9182734 NY ",
+                //         type: "Credit",
+                //         amount: "$1,500.00",
+                //     },
+                //     {
+                //         date: "01/05/2024",
+                //         description: "POS DEBIT NETFLIX.COM 8623945 CA",
+                //         type: "Debit",
+                //         amount: "$15.99",
+                //     },
+                //     {
+                //         date: "01/02/2024",
+                //         description: "POS DEBIT STARBUCKS 5487216 IL",
+                //         type: "Debit",
+                //         amount: "$3.25",
+                //     },
+                //     {
+                //         date: "12/30/2023",
+                //         description: "POS DEBIT AMAZON.COM/BILL 800-692-7753",
+                //         type: "Debit",
+                //         amount: "$64.33",
+                //     },
+                //     {
+                //         date: "12/27/2023",
+                //         description: "POS DEBIT APPLE.COM/BILL 800-692-7753 CA",
+                //         type: "Debit",
+                //         amount: "$12.99",
+                //     },
+                //     {
+                //         date: "12/24/2023",
+                //         description: "ONLINE TRANSFER 0987654321 9207561 TX",
+                //         type: "Credit",
+                //         amount: "$500.00",
+                //     },
+                //     {
+                //         date: "12/21/2023",
+                //         description: "POS DEBIT UBER 9207561 1234597 OH",
+                //         type: "Debit",
+                //         amount: "$22.50",
+                //     },
+                //     {
+                //         date: "12/18/2023",
+                //         description: "POS DEBIT WALMART 6738957 TN",
+                //         type: "Debit",
+                //         amount: "$56.27",
+                //     },
+                //     {
+                //         date: "12/15/2023",
+                //         description: "POS DEBIT TARGET3847531 NY",
+                //         type: "Debit",
+                //         amount: "$35.00",
+                //     },
+                //     {
+                //         date: "12/12/2023",
+                //         description: "ONLINE TRANSFER 760219843 CA",
+                //         type: "Credit",
+                //         amount: "$750.00",
+                //     },
+                //     {
+                //         date: "12/09/2023",
+                //         description: "POS DEBIT NETFLIX.COM 853028190 CA",
+                //         type: "Debit",
+                //         amount: "$15.99",
+                //     },
+                //     {
+                //         date: "12/06/2023",
+                //         description: "POS DEBIT STARBUCKS 390275463 CA",
+                //         type: "Debit",
+                //         amount: "$5.25",
+                //     },
+                //     {
+                //         date: "12/03/2023",
+                //         description: "POS DEBIT AMAZON.COM 931847507 TN",
+                //         type: "Debit",
+                //         amount: "$82.47",
+                //     },
+                //     {
+                //         date: "11/30/2023",
+                //         description: "POS DEBIT APPLE.COM/BILL 866-712-7753 CA",
+                //         type: "Debit",
+                //         amount: "$15.99",
+                //     },
+                //     {
+                //         date: "11/27/2023",
+                //         description: "ONLINE TRANSFER 925463891 SAN DIEGO CS",
+                //         type: "Credit",
+                //         amount: "$1,000.00",
+                //     },
+                //     {
+                //         date: "11/24/2023",
+                //         description: "POS DEBIT UBER 482640382 TN",
+                //         type: "Debit",
+                //         amount: "$18.00",
+                //     },
+                //     {
+                //         date: "11/21/2023",
+                //         description: "POS DEBIT WALMART 213905613 TX",
+                //         type: "Debit",
+                //         amount: "$47.63",
+                //     },
+                //     {
+                //         date: "11/18/2023",
+                //         description: "POS DEBIT TARGET 482649382 TN",
+                //         type: "Debit",
+                //         amount: "$25.00",
+                //     },
+                //     {
+                //         date: "11/15/2023",
+                //         description: "ONLINE TRANSFER 0987654321, SAN DIEGO CA",
+                //         type: "Credit",
+                //         amount: "$300.00",
+                //     },
+                //     {
+                //         date: "11/12/2023",
+                //         description: "POS DEBIT NETFLIX.COM 760321473 CA",
+                //         type: "Debit",
+                //         amount: "$15.99",
+                //     },
+                //     {
+                //         date: "11/09/2023",
+                //         description: "POS DEBIT STARBUCKS 238407765 TX",
+                //         type: "Debit",
+                //         amount: "$3.50",
+                //     },
+                //     {
+                //         date: "11/06/2023",
+                //         description: "POS DEBIT AMAZON.COM 759231065 TN",
+                //         type: "Debit",
+                //         amount: "$49.99",
+                //     },
+                //     {
+                //         date: "11/03/2023",
+                //         description: "ONLINE TRANSFER 1234567890 CA",
+                //         type: "Credit",
+                //         amount: "$500.00",
+                //     },
+                //     {
+                //         date: "11/01/2023",
+                //         description: "POS DEBIT APPLE.COM/BILL 800-692-7753 CA",
+                //         type: "Debit",
+                //         amount: "$12.99",
+                //     },
+                // ],
+                
+                datas: [
+                    { date: "11/14/2023", description: "POS DEBIT NETFLIX.COM 760321473 CA", type: "Debit", amount: "-$15.99" },
+                    { date: "11/09/2023", description: "POS DEBIT STARBUCKS 238407765 TX", type: "Debit", amount: "-$3.50" },
+                    { date: "11/06/2023", description: "POS DEBIT AMAZON.COM 759231065 TN", type: "Debit", amount: "-$49.99" },
+                    { date: "11/03/2023", description: "ONLINE TRANSFER 1234567890 CA", type: "Credit", amount: "$500.00" },
+                    { date: "11/01/2023", description: "POS DEBIT APPLE.COM/BILL 800-692-7753 CA", type: "Debit", amount: "-$12.99" },
+                    { date: "10/30/2023", description: "POS DEBIT AMAZON.COM/BILL 800-692-7753", type: "Debit", amount: "-$64.33" },
+                    { date: "10/30/2023", description: "POS DEBIT Kroger Grocery Store 6789012 TX", type: "Debit", amount: "-$55.60" },
+                    { date: "10/27/2023", description: "POS DEBIT Whataburger 9012345 TX", type: "Debit", amount: "-$20.30" },
+                    { date: "10/27/2023", description: "POS DEBIT APPLE.COM/BILL 800-692-7753 CA", type: "Debit", amount: "-$12.99" },
+                    { date: "10/24/2023", description: "POS DEBIT McDonald's Restaurant 3456789 TX", type: "Debit", amount: "-$12.45" },
+                    { date: "10/24/2023", description: "ONLINE TRANSFER 0987654321 9207561 TX", type: "Credit", amount: "$500.00" },
+                    { date: "10/21/2023", description: "POS DEBIT Starbucks Coffee 6789012 TX", type: "Debit", amount: "-$8.75" },
+                    { date: "10/21/2023", description: "POS DEBIT UBER 9207561 1234597 OH", type: "Debit", amount: "-$22.50" },
+                    { date: "10/18/2023", description: "POS DEBIT Target Store 7890123 TX", type: "Debit", amount: "-$45.99" },
+                    { date: "10/18/2023", description: "POS DEBIT WALMART 6738957 TN", type: "Debit", amount: "-$56.27" },
+                    { date: "10/15/2023", description: "POS DEBIT Walmart Supercenter 2345678 TX", type: "Debit", amount: "-$60.35" },
+                    { date: "10/15/2023", description: "POS DEBIT TARGET3847531 NY", type: "Debit", amount: "-$35.00" },
+                    { date: "10/12/2023", description: "POS DEBIT H-E-B Grocery Store 5678901 TX", type: "Debit", amount: "-$75.20" },
+                    { date: "10/12/2023", description: "ONLINE TRANSFER 760219843 CA", type: "Credit", amount: "$750.00" },
+                    { date: "10/09/2023", description: "POS DEBIT Shell Gas Station 4567890 TX", type: "Debit", amount: "-$40.50" },
+                    { date: "10/09/2023", description: "POS DEBIT NETFLIX.COM 853028190 CA", type: "Debit", amount: "-$15.99" },
+                    { date: "10/06/2023", description: "POS DEBIT CVS Pharmacy 8901234 TX", type: "Debit", amount: "-$25.75" },
+                    { date: "10/06/2023", description: "POS DEBIT STARBUCKS 390275463 CA", type: "Debit", amount: "-$5.25" },
+                    { date: "10/03/2023", description: "POS DEBIT 7-Eleven 1234567 TX", type: "Debit", amount: "-$10.00" },
+                    { date: "10/03/2023", description: "POS DEBIT AMAZON.COM 931847507 TN", type: "Debit", amount: "-$82.47" },
+                ],
+            }
+        },
+    }
+</script>
+
+<style lang="scss" scoped>
+@import "../../scss/Dashboard.scss";
+
+.v-container{
+    padding: 0px !important;
+
+    .v-toolbar__content{
+        height: 100% !important;
+        // align-items: center;
+        display: block !important;
+        // flex: 0 0 auto;
+        // position: relative;
+        transition: inherit;
+        width: 100%;
+
+    }
+}
+</style>
